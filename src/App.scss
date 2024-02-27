@@ -1,0 +1,18 @@
+
+.c_container{
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 .5rem;
+  @media (width<=768px) {
+    .c_container{
+      max-width: 720px;
+    }
+  }
+  @media (width<=576px) {
+    .c_container{
+      max-width: 100%;
+    }
+  }
+}
+
+
