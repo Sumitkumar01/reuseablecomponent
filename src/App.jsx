@@ -1,12 +1,19 @@
 import "./App.scss";
-import NavBar1 from "./components/NavBar1";
+import NavBar1 from "./components/nav/NavBar1";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import NavBar2 from "./components/nav/NavBar2";
+import NavBar3 from "./components/nav/NavBar3";
+import NavBar4 from "./components/nav/NavBar4";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
       <Router>
         <NavBar1 />
+        <NavBar2 />
+        <NavBar3 />
+        <NavBar4 />
         <Routes>
           <Route
             path="/"
@@ -17,7 +24,7 @@ function App() {
             }
           />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );
